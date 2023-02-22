@@ -1,5 +1,6 @@
 ﻿namespace ConsoleApp
 {
+    using ConsoleApp.Models;
     using System;
     using System.Collections.Generic;
     using System.IO;
@@ -97,24 +98,5 @@
 
             Console.ReadLine();
         }
-    }
-
-    class ImportedObject : ImportedObjectBaseClass
-    {
-        public string Schema { get; set; }
-
-        public string ParentName { get; set; }
-        public string ParentType { get; set; }
-            
-        public string DataType { get; set; }
-        public string IsNullable { get; set; }
-
-        public double NumberOfChildren;
-    }
-
-    class ImportedObjectBaseClass
-    {
-        public string Name { get; set; }
-        public string Type { get; set; }
     }
 }
