@@ -20,7 +20,7 @@
             while (!streamReader.EndOfStream)
             {
                 var line = streamReader.ReadLine();
-                importedLines.Add(line);
+                if(!string.IsNullOrEmpty(line)) importedLines.Add(line);
             }
 
             for (int i = 0; i <= importedLines.Count; i++)
